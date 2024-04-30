@@ -1,0 +1,556 @@
+.product-detail-area {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    padding: 50px 0;
+}
+
+.product-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.product-detail-information {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    gap: 35px;
+    min-height: 700px;
+}
+
+.product-detail-info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.product-detail-name-cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.product-detail-name-cat h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.product-detail-reviews-write {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 14px;
+}
+
+@keyframes reviewAnimation {
+    0% {
+        width: 0%;
+        left: 50px;
+    }
+    100% {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.product-detail-reviews-write > span:nth-child(2) {
+    cursor: pointer;
+    position: relative;
+    transition: .3s;
+}
+
+.product-detail-reviews-write > span:nth-child(2):hover::after {
+    background-color: red;
+    animation: reviewAnimation .3s forwards;
+}
+
+.product-detail-reviews-write > span:nth-child(2):hover {
+    color: red;
+}
+
+.product-detail-reviews-write > span:nth-child(2)::after {
+    content:  '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.5px;
+    background-color: black;
+    transition: .3s;
+}
+
+.product-detail-price {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.product-detail-add-to-cart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 40px 0;
+    border-top: 1px solid #E5E5E5;
+    border-bottom:1px solid #E5E5E5;
+    gap: 40px;
+}
+
+.pr-qty {
+    gap: 15px !important;
+}
+
+.product-detail-product-btn > .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.product-detail-image-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    width: 50%;
+}
+
+.product-detail-image-area > img {
+    width: 600px;
+    height: 760px;
+}
+
+.small-detail-page-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.small-detail-page-images > img {
+    width: 90px;
+    height: 120px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.small-detail-page-images > img:hover {
+    border: 1px solid black;
+}
+
+.pr-detail-quantity-btn {
+    justify-content: center !important;
+    gap: 30px !important;
+    width: 18% !important;
+}
+
+.pr-detail-adtocart-btn {
+    width: 80% !important;
+}
+
+.productdetail-icons {
+    list-style: none;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.productdetail-icons >  li {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    gap: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.productdetail-icons >  li:hover {
+    color: red;
+}
+
+.productdetail-icons >  li:hover  .productdetail-icons >  li > i{
+    color: red;
+}
+
+.product-detail-icons > ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+.product-detail-icons {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.pr-detail-shipping {
+    width: 100%;
+    height: 50px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pr-detail-shipping div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.pr-detail-shipping p {
+    width: 130px;
+    font-size: 13px;
+}
+
+.pr-detail-shipping i {
+    font-size: 33px;
+}
+
+.pr-detail-2nd-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.pr-detail-2nd-section-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.second-section-header {
+    width: 100%;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 40px 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.second-section-header > li {
+    font-size: 20px;
+    color: gray;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.detail-pr-brand {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.detail-pr-brand:hover {
+    color: red;
+}
+
+@keyframes sectionHeaderAnimation {
+    0% {
+        width: 0%;
+        left: 50px;
+    }
+    100% {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.second-section-header > li:hover::after {
+    content:  '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transition: .3s;
+    background-color: black;
+    animation: sectionHeaderAnimation .3s forwards;
+}
+
+.second-section-header > li:hover {
+    color: black;
+}
+
+.pr-detail-description {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 55px;
+    padding: 50px 0;
+}
+
+.pr-detail-description > p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.material-washing,
+.size-shape {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.material-washing > h2,
+.size-shape > h2 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.materials-info,
+.size-info,
+.additional-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.materials-info ul,
+.size-info ul,
+.additional-info ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 15px 0;
+}
+
+.materials-info ul:last-child,
+.size-info ul:last-child,
+.additional-info ul:last-child {
+    border-bottom: none;
+}
+
+.materials-info ul > li,
+.size-info ul > li,
+.additional-info ul > li {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.materials-info ul > li:last-child,
+.size-info ul > li:last-child,
+.additional-info ul > li:last-child {
+    font-weight: 600;
+}
+
+.additional-info {
+    width: 100%;
+    padding-bottom: 30px;
+    justify-content: flex-start;
+}
+
+.additional-info ul {
+    justify-content: flex-start;
+}
+
+.additional-info ul > li {
+    width: 60%;
+}
+
+.detail-reviews-area {
+    border-top: none;
+    margin-top: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 0;
+    gap: 0px !important;
+}
+
+.rating-area {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 80px;
+    width: 100%;
+}
+
+.rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.rate > h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: red;
+}
+
+.rate > span {
+    font-size: 14px;
+}
+
+.rate > button {
+    width: 130px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.reviews-display-area {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.single-review {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #E5E5E5;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.review-by-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-by-user  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.review-by-user > span {
+    color: black;
+    font-size: 12px;
+}
+
+.single-review > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.review-form-area {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.review-form-area h2 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.review-form-area p {
+    font-size: 15px;
+    position: relative;
+}
+
+.review-form-area p::after {
+    content: "*";
+    position: absolute;
+    color: red;
+    right: -10px;
+}
+
+.reviewForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+
+.reviewForm > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.review-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column !important;
+}
+
+.reviewForm label{
+    position: relative;
+}
+
+.reviewForm textarea {
+    padding: 20px;
+}
+
+.reviewForm label::after {
+    content: "*";
+    position: absolute;
+    color: red;
+    right: -10px;
+}
+
+.review-btn {
+    padding: 25px 80px;
+    font-size: 20px;
+}
+
+.InStock {
+    color: green;
+}
+.OutOfStock {
+    color: red;
+}
+
+.detail-sizes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+}

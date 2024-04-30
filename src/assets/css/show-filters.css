@@ -1,0 +1,221 @@
+@keyframes showFilterSlide {
+    0% {
+        right: -300px;
+    }
+
+    100% {
+        right: -95px;
+    }
+}
+
+.show-filters {
+    width: 600px;
+    height: 100vh;
+    min-height: 800px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -95px;
+    z-index: 99999;
+    padding: 25px 40px 110px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    cursor: auto;
+    animation: showFilterSlide .20s forwards;
+    box-shadow: 50px 50px 50px black;
+    overflow-y: scroll;
+}
+
+.show-filters-list,
+.show-filters__all-cat {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 425px;
+}
+
+.show-filters-list li {
+    padding: 18px 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.main-filter {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.show-filters__header {
+    width: 440px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.show-filters__header button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 30px;
+    transition: .3s;
+}
+
+.clear-filters-btn {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 3px;
+    transition: .3s;
+    padding: 0 5px;
+    cursor: pointer;
+    box-shadow: rgba(235, 234, 234, 0.25) 0px 54px 55px, rgba(248, 246, 246, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.clear-filters {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: .3s;
+}
+
+.clear-filters-btn:hover {
+    background-color: black;
+}
+
+.clear-filters-btn:hover .clear-filters{
+    color: white;
+}
+
+.show-filters__header button:hover {
+    color: red;
+}
+
+@keyframes showCat {
+    0% {
+        top: 20px;
+        overflow: hidden;
+    }
+
+    100% {
+        top: 100px;
+    }
+}
+
+.filter-colors, 
+.show-filters__all-cat,
+.filter-brands,
+.sizes-filter,
+.prices-filter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100px;
+    padding-top: 10px;
+    gap: 9px 9px;
+    animation: showCat .3s forwards;
+}
+
+.show-filters__all-cat,
+.sizes-filter,
+.prices-filter {
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.sizes-filter {
+    width: 420px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.show-filters__all-cat span{
+    font-size: 15px;
+}
+
+.show-filters__all-cat .color-bg,
+.show-filters__all-cat .brand-bg {
+    padding: 0px 55px;
+}
+
+.color-bg,
+.brand-bg,
+.size-bg,
+.price-bg {
+    width: 23%;
+    height: 35px;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+    box-shadow: rgba(235, 234, 234, 0.25) 0px 54px 55px, rgba(248, 246, 246, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.brand-bg {
+    padding: 25px 20px;
+}
+
+.color-bg:hover,
+.brand-bg:hover,
+.size-bg:hover,
+.price-bg:hover  {
+    background-color: black;
+    color: white;
+}
+
+.color-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.color-name,
+.brand-name,
+.price-name {
+    text-transform: capitalize;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 769px) {
+    .show-filters,
+    .wishlist {
+        width: 100%;
+        left: 0;
+    }
+    .show-filters__header,
+    .wishlist-head {
+        width: 100%;
+    }
+    .show-filters-list,
+    .wishlist-items {
+        width: 100%;
+    }
+    .wishlist-header-remove {
+        width: 100%;
+        justify-content: flex-end;
+        padding-left: 0;
+    }
+    .wishlist__item {
+        width: 100%;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    }
+}

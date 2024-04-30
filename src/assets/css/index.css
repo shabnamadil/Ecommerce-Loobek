@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-style: normal;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+#root {
+    color: #000000;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+    width: 94%;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+

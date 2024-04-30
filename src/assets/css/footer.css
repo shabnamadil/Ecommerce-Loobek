@@ -1,0 +1,119 @@
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 0;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.footer-con {
+    flex-wrap: wrap;
+}
+
+.footer__quick_links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 85%;
+    gap: 50px 30px;
+    flex-wrap: wrap;
+}
+
+.footer__quick_link_box,
+.footer_following {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__quick_link_box h3,
+.footer_following h3 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.footer__quick_links ul,
+.footer_following ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__quick_links li,
+.footer_following li {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.footer_following i {
+    font-size: 23px;
+}
+
+.footer_following li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: .3s;
+}
+
+.footer_following ul {
+    gap: 10px;
+}
+
+.footer__quick_links li:hover,
+.footer_following li:hover {
+    color: red;
+}
+
+.company_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.company_com {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.company_info p {
+    width: 150px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.company_com span:first-child {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.company_com span:last-child {
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+@media only screen and (min-width:768px) {
+    .footer-con {
+        flex-wrap: nowrap;
+    }
+
+    .footer__quick_links {
+        width: 75%;
+        gap: 50px 30px;
+    }
+
+}

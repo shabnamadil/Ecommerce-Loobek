@@ -1,0 +1,137 @@
+header {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #E5E5E5;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .header__icons {
+        font-size: 18px;
+    }
+
+    .header__icons,
+    .header__quick_links {
+        list-style: none;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header__icon,
+    .header__quick_link {
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .header__icon:hover,
+    .header__quick_link:hover {
+        color: red;
+    }
+
+    .header__right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .header__lang_option,
+    .currency__option {
+        position: relative;
+        padding: 12px 10px;
+        display: flex;
+        gap: 8px;
+        transition: .2s;
+        cursor: pointer;
+    }
+    
+    .arrow_down,
+    .arrow_down_curr {
+        position: absolute;
+        right: 0;
+        left: 80px;
+        top: 12px;
+    }
+
+    .arrow_down_curr {
+        left: 50px;
+    }
+
+    .header__curr_options,
+    .header__lang_options {
+       display: none;
+       opacity: 0;
+        
+    }
+
+    .header__lang_cur {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        font-weight: 400;
+    }
+
+    .header__lang_option:hover .header__lang_options,
+    .currency__option:hover .header__curr_options{
+        border: none;
+        color: #383838;
+        list-style: none;
+        position: absolute;
+        top: 42px;
+        left: -35px;
+        border: 1px solid black;
+        padding: 0 25px;
+        width: 150px;
+        min-height: 90px;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: white;
+        z-index: 99;
+    }
+
+    .currency__option:hover .header__curr_options {
+        left: -100px;
+        right: 0;
+    }
+
+    .header__lang_option:hover,
+    .currency__option:hover {
+        color: red;
+    }
+
+    .flag {
+        width: 18px;
+        height: 18px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    .header__lang_opt,
+    .currency__opt {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 8px;
+        transition: .2s;
+    }
+
+    .header__lang_opt:hover,
+    .currency__opt:hover {
+        color: red;
+    }
+}

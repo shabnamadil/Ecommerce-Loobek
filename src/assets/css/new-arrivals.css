@@ -1,0 +1,41 @@
+.new-arrivals-section,
+.recommended-section,
+.bestsellers-section {
+    width: 100%;
+    min-height: 600px;
+    padding-top: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bestsellers-section {
+    padding: 70px 0;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.new-arrivals__header,
+.recommended-section__header,
+.bestsellers-section__header {
+    display: flex;
+    align-items: flex-start;
+}
+
+.new-arrivals__header h2,
+.recommended-section__header h2,
+.bestsellers-section__header h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 426px) {
+
+    .new-arrivals__header,
+    .recommended-section__header {
+        align-items: center;
+        justify-content: center;
+    }
+}
